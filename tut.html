@@ -61,7 +61,7 @@
     <!-- <script>
         window.alert(4+5)
     </script>
-    <!-- <button type="button" onclick="window.alert(9+1)">me</button> -->
+    <button type="button" onclick="window.alert(9+1)">me</button> -->
     <!-- <button type="button" onclick="alert(9+2)">click Me</button> -->
     <!-- <script>
         alert(5+5)
@@ -334,8 +334,115 @@ function myfunction(){
 
 
 
-<!-- JavaScript String Search -->
+<!-- "JavaScript String Search"------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- <p id="hello"></p>
+<script>
+let gud = "roshan kalamkar"  
+// document.getElementById("hello").innerHTML=gud.indexOf("kalamkar");
+document.getElementById("hello").innerHTML=gud.lastIndexOf("kalamkar");
+
+</script> -->
+
+<!-- <--indexOf-->
+
+<!-- <p id="kk"></p>
+<script>
+let roshan="hello guys am roshan kalamkar for nagpur MH  my name is roshan   and my pet name is also roshan"
+ document.getElementById("kk").innerHTML=roshan.indexOf("roshan");
 
 
+
+</script> -->
+
+<!--lastIndexOf-->
+<!-- <p id="jj"></p> 
+<script>
+    let ros="hello guys am roshan kalamkar for nagpur MH  my name is roshan   and my pet name is also roshan"
+     document.getElementById("jj").innerHTML=ros.lastIndexOf("roshan");
+
+    </script> -->
+    <!-- <p id="hello"></p>
+
+    <script>
+    let str = "Please locate where 'locate' occurs  locate locate locate locate locate locate locate locate locate locate !";
+    document.getElementById("hello").innerHTML = str.indexOf("locate",15);   // in this string search it will show the position of perticuler lettr after the given number position
+                                                                           //  ( what i mean that is in indexOf methods suppos here we have given number 15 it will start finding letter after 15 and shoew the position of letter search and it will give first letter)
+                                                                         //   (in the case word which we find is not available then o/p will be =(-1))
+    </script> -->
+
+
+    <p id="mm"></p>
+
+<!-- <script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("mm").innerHTML = str.lastIndexOf("locate", 15);  /// it will search in-side 15 position only if we have more same words then it will give lastIndexOf lettet
+</script> -->
+
+<!-- <script>
+    let roshan="A leading international school in Singapore. Great Teachers"
+
+    document.getElementById("mm").innerHTML=roshan.includes("school") // Returns true if the string contains the value, otherwise false
+    
+
+
+</script> -->
+
+<!-- <script>
+    let text = "Hello world, welcome to the universe.";
+    document.getElementById("mm").innerHTML = text.includes("world", 12); // returns false cozz walue is not present after 12N;
+    </script> -->
+
+
+<!-- <script>
+let text = "Hello world, welcome to the universe.";
+document.getElementById("mm").innerHTML = text.startsWith("Hello"); // true other wise false
+</script> -->
+
+<!-- <script>
+    let text = "John Doe";
+    document.getElementById("mm").innerHTML = text.endsWith("Doe");  //true other wise false
+    </script> -->
+
+    <!-- <script>
+        let text = "Hello world, welcome to the universe.";
+        document.getElementById("mm").innerHTML = text.endsWith("world", 11);  // it will se the value before 11 charecters
+                                                                              // true other wise false
+        </script> -->
+
+
+        <p id="hr"></p>
+        <!-- <script>
+            let firstName="roshan"        
+            let lastName="kalamkar"
+
+            let text=`welcome ${firstName},${lastName}!`;
+            document.getElementById("hr").innerHTML=text
+        </script> -->
+
+        <!-- <script>
+            let hello=10;
+            let bolo=0.25
+            let total=`total: ${(hello *(1+bolo)).toFixed(4)}`
+
+            document.getElementById("hr").innerHTML=total
+            
+     
+                
+
+        </script> -->
+
+        <!-- <script>
+            let roshan="roshan";
+            let sujal=10;
+            let x=roshan/sujal
+            let y=NaN;
+            document.getElementById("hr").innerHTML=isNaN(x);
+            document.getElementById("hr").innerHTML=typeof(y);
+
+
+        </script> -->
+ <!-- Number method end ------------------------------------------------------------------------------------------------------>
+         
 </body>
 </html>

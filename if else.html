@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+
+</head>
+<body>
+    <p id="oo"></p>
+    <script>
+const hour= new Date().getHours();
+let Hello;
+
+if( hour<18)
+{
+Hello="Good day";
+}else{
+Hello="Good evening"
+}
+
+// document.getElementById("oo").innerHTML=Hello;
+</script>
+
+<script>
+    const time= new Date().getHours();
+    let HELLO;
+   if (time<12){
+    HELLO="Good Morning"
+   } else if(time<20){
+    HELLO="Good Evening"
+   } else{
+    HELLO="Good Night"
+   }
+//  document.getElementById("oo").innerHTML=HELLO;
+</script>
+<h1 ><b>Switch case</b></h1>
+<script>
+let DAY;
+switch (new Date().getDay()){
+    case 0:
+    DAY="Sunday";
+    break; 
+    case 1:
+    DAY="Monday";
+    break;    
+    case 2:
+    DAY="Tuesday";
+    break;    
+    case 3:
+    DAY="Wednesday";
+    break;    
+    case 4:
+    DAY="Thursday";
+    break;    
+    case 5:
+    DAY="Friday";
+    break;    
+    case 6:
+    DAY="Saturday";
+    break;    
+}
+document.getElementById("oo").innerHTML=DAY;
+
+
+
+</script>
+</body>
+</html>

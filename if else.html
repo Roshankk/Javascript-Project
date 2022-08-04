@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,64 +8,155 @@
     <title>If Else</title>
 
 </head>
+
 <body>
     <p id="oo"></p>
+    <p id="oo1"></p>
     <script>
-const hour= new Date().getHours();
-let Hello;
+        const hour = new Date().getHours();
+        let Hello;
 
-if( hour<18)
-{
-Hello="Good day";
-}else{
-Hello="Good evening"
-}
+        if (hour < 18) {
+            Hello = "Good day";
+        } else {
+            Hello = "Good evening"
+        }
 
 // document.getElementById("oo").innerHTML=Hello;
-</script>
+    </script>
 
-<script>
-    const time= new Date().getHours();
-    let HELLO;
-   if (time<12){
-    HELLO="Good Morning"
-   } else if(time<20){
-    HELLO="Good Evening"
-   } else{
-    HELLO="Good Night"
-   }
+    <script>
+        const time = new Date().getHours();
+        let HELLO;
+        if (time < 12) {
+            HELLO = "Good Morning"
+        } else if (time < 20) {
+            HELLO = "Good Evening"
+        } else {
+            HELLO = "Good Night"
+        }
 //  document.getElementById("oo").innerHTML=HELLO;
-</script>
-<h1 ><b>Switch case</b></h1>
+    </script>
+    <h1><b>Switch case</b></h1>
+    <script>
+        let DAY;
+        switch (new Date().getDay()) {
+            case 0:
+                DAY = "Sunday";
+                break;
+            case 1:
+                DAY = "Monday";
+                break;
+            case 2:
+                DAY = "Tuesday";
+                break;
+            case 3:
+                DAY = "Wednesday";
+                break;
+            case 4:
+                DAY = "Thursday";
+                break;
+            case 5:
+                DAY = "Friday";
+                break;
+            case 6:
+                DAY = "Saturday";
+                break;
+        }
+// document.getElementById("oo").innerHTML=DAY;
+
+
+
+    </script>
+    <h2>For Loops</h2>
+    <script>
+        let text = '';
+
+        for (let i = 0; i <= 10; i++) {
+            text += i + "<br>"
+        }
+        // document.getElementById("oo").innerHTML=text;
+
+
+    </script>
+
+    <h2>JavaScript For In Loop</h2>
+    <script>
+        const tex = [12, 13, 14, 15, 16, 18, 19, 20, 17];
+        tex.sort(function (a, b) { return (a - b) })
+        // document.getElementById('oo1').innerHTML = tex;
+
+        let hello = "";
+        for (let x in tex) {
+            hello += tex[x] + "<br>"
+
+        }
+        // document.getElementById('oo').innerHTML = hello
+    </script>
+
+    <h2>JavaScript Array.forEach()</h2>
+
+    <script>
+        const rosh = [45, 4, 9, 16, 35];
+        rosh.sort(function (a, b) { return a - b });
+        let txt = '';
+        rosh.forEach(myfunction);
+        function myfunction(value, index, array) {
+            txt += array + "<br>";
+        }
+        // document.getElementById("oo").innerHTML = txt;
+    </script>
+
+    <h2>JavaScript For Of Loop</h2>
+    <script>
+        const rose = ["Audi", "Swift", "Kia saltos", "XUV 700"];
+        rose.sort();
+        let lotus = "";
+        for (let x of rose) {
+            lotus += x + "<br>";
+        }
+        // document.getElementById('oo').innerHTML = lotus;
+
+    </script>
+    <script>
+        const sb = "javascript";
+        let rr = "";
+        for (let x of sb) {
+            rr += x + "<br>";
+        }
+        // document.getElementById('oo').innerHTML=rr;
+    </script>
+    <h2>JavaScript While Loop</h2>
+
+    <script>
+        let poll = "";
+        let i = 0;
+        while (i < 10) {
+            poll += i + "<br>"; i++;
+        }
+        // document.getElementById("oo").innerHTML=poll;
+    </script>
+    <h2>JavaScript Do While Loop</h2>
+    <script>
+        let su = "";
+        let j = 0;
+        do {
+            su += j + "<br>"; j++;
+
+        } while (j < 10)
+
+        // document.getElementById("oo").innerHTML = su;
+    </script>
+
+<h2>JavaScript Loops</h2>
 <script>
-let DAY;
-switch (new Date().getDay()){
-    case 0:
-    DAY="Sunday";
-    break; 
-    case 1:
-    DAY="Monday";
-    break;    
-    case 2:
-    DAY="Tuesday";
-    break;    
-    case 3:
-    DAY="Wednesday";
-    break;    
-    case 4:
-    DAY="Thursday";
-    break;    
-    case 5:
-    DAY="Friday";
-    break;    
-    case 6:
-    DAY="Saturday";
-    break;    
-}
-document.getElementById("oo").innerHTML=DAY;
-
-
-
+  let jar="";
+  for(let i=0; i<10122; i++){
+    if(i===110){break};
+    jar+=i+"<br>";
+  }
+  document.getElementById("oo").innerHTML=jar;
 </script>
 </body>
+
 </html>

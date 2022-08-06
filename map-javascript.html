@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Methods</title>
+</head>
+
+<body>
+    <p id="kk"></p>
+    <script>
+        const abc = new Map([
+            ["apple", 100],
+            ["gava", 200],
+            ["mango", 300],
+            ["grapes", 400]
+        ])
+
+        abc.set("apple", 600)
+        // document.getElementById('kk').innerHTML=abc.get("apple")
+    </script>
+    <script>
+        const def = new Map();
+
+        def.set("apple", 100);
+        def.set("gava", 200);
+        def.set("orange", 300);
+        def.set("mango", 400);
+//    document.getElementById("kk").innerHTML=def.size
+
+
+    </script>
+    <script>
+        const ab = new Map([
+            ["apple", 100],
+            ["gava", 200],
+            ["mango", 300],
+            ["grapes", 400]
+        ])
+
+        ab.delete("apple", 600)
+        // document.getElementById('kk').innerHTML=ab.size
+
+    </script>
+    <script>
+        const a = new Map([
+            ["apple", 100],
+            ["gava", 200],
+            ["mango", 300],
+            ["grapes", 400]
+        ])
+
+
+
+        // document.getElementById('kk').innerHTML=a.has("apple")
+
+    </script>
+    <script>
+        const z = new Map([
+            ["apple", 100],
+            ["gava", 200],
+            ["mango", 300],
+            ["grapes", 400]
+        ])
+
+        z.delete("apple")
+
+        document.getElementById('kk').innerHTML = z.has("apple")
+
+    </script>
+    
+    <script>
+        const e= new Map([
+            ["apple", 100],
+            ["gava", 200],
+            ["mango", 300],
+            ["grapes", 400]
+        ])
+
+        let you=""
+        e.forEach(function(value,key){
+            you+=key+"="+value+"<br>"
+        })
+
+       
+
+        document.getElementById('kk').innerHTML = you;
+
+    </script>
+</body>
+
+</html>

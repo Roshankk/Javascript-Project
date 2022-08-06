@@ -150,12 +150,36 @@
 
 <h2>JavaScript Loops</h2>
 <script>
-  let jar="";
-  for(let i=0; i<10122; i++){
-    if(i===110){break};
-    jar+=i+"<br>";
-  }
-  document.getElementById("oo").innerHTML=jar;
+ let jar=""
+ for(let k=0; k<=100; k++){
+    if(k===4){break}
+    jar+=k+"<br>"
+ }
+//  document.getElementById('oo').innerHTML=jar
+</script>
+<script>
+let ngp="";
+for(let v=0; v<=10; v++){
+    if(v===4){continue}
+    ngp+=v+"<br>"
+}
+// document.getElementById("oo").innerHTML=ngp;
+</script>
+<script>
+const cars=['bmw','tata','kia saltos', 'audi']
+let wer=""
+
+list:{
+wer+=cars[0]+"<br>"
+wer+=cars[1]+"<br>"
+break list;
+wer+=cars[2]+"<br>"
+wer+=cars[3]+"<br>"
+
+}
+// document.getElementById('oo').innerHTML=wer;
+
+
 </script>
 </body>
 

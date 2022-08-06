@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT-SETS</title>
+</head>
+
+<body>
+    <p id="shru"></p>
+    <h2>JavaScript Sets</h2>
+    <script>
+        // let txt = new Set(["a", "b", "c", "d"])
+
+        // document.getElementById("shru").innerHTML = txt.size;
+
+    </script>
+
+    <script>
+        let hello = new Set();
+
+        hello.add("a");
+        hello.add("b");
+        hello.add("c");
+        hello.add("d");
+        hello.add("e");
+        hello.add("f");
+        hello.add("g");
+        hello.add("h");
+        hello.add("i");
+
+        // document.getElementById("shru").innerHTML = hello.size;
+
+    </script>
+
+
+    <script>
+        const col = new Set();
+        const a = "a";
+        const b = "b";
+        const c = "c";
+
+        col.add("a");
+        col.add("b");
+        col.add("c");
+        // document.getElementById("shru").innerHTML = col.size;
+
+    </script>
+
+    <script>
+        const jum = new Set(["a", "b", "c", "d", "e"])
+
+        jum.add("f");
+        jum.add("g");
+        // document.getElementById("shru").innerHTML = jum.size;
+
+    </script>
+    <script>
+        const jeep = new Set(["a", "b", "c", "d"]);
+        let bmw = "";
+
+        jeep.forEach(function (value) {
+            bmw += value + "<br>";
+        })
+        document.getElementById("shru").innerHTML = bmw;
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The JavaScript this Keyword</title>
+</head>
+
+<body>
+    <h1>The JavaScript this Keyword</h1>
+    <p id="tell1"></p>
+    <p id="tell2"></p>
+    <script>
+        const person = {
+            firstName: "Roshan",
+            lastName: "Kalamkar",
+            age: 23,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+
+        }
+        // document.getElementById("tell").innerHTML=person.fullName()
+
+
+
+
+    </script>
+    <script>
+        let x = this;
+// document.getElementById("tell").innerHTML=x;
+
+    </script>
+
+    <script>
+        "use strict";
+
+        //  document.getElementById("tell").innerHTML=myfunction();
+
+        function myfunction() {
+            return this;
+        }
+    </script>
+    <!-- <button onclick="this.style.display='none'">click to remove me 😊</button> -->
+
+    <script>
+        const play1 = {
+            fullName: function () {
+                return this.firstName + " " + this.lastName + "'s" + " age is " + this.age;
+            }
+        }
+
+        const play2 = {
+            firstName: "Roshan",
+            lastName: "kalamkar",
+            age: 23
+        }
+
+        const play3 = {
+            firstName: "Sujal",
+            lastName: "kalamkar",
+            age: 18
+        }
+        // let rosh=play1.fullName.call(play2);
+        // document.getElementById("tell1").innerHTML=rosh;
+        let ros = play1.fullName.bind(play3)
+        document.getElementById("tell2").innerHTML = ros();
+
+    </script>
+</body>
+
+</html>

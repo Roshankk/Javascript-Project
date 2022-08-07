@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hoisting</title>
+
+</head>
+<body>
+    <h1>JavaScript Hoisting</h1>
+   <p id="to"></p> 
+   <p id="to1"></p> 
+   <script>
+  x=5;
+//   txt=document.getElementById("to1");
+  txt.innerHTML=x
+ var x;
+
+   </script>
+
+   <script>
+    y=9;
+// txt=document.getElementById("to");
+txt.innerHTML=y
+
+   </script>
+
+<script>
+    function sayHello(){
+        document.getElementById("to").innerHTML="hello";
+    }
+
+    var i=30;
+
+    sayHello();
+    document.getElementById("to1").innerHTML=i;
+</script>
+</body>
+</html>

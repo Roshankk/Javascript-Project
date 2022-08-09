@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+    <span id="hello"></span>
+    <script>
+        const you = {
+            firstName: "roshan",
+            lastName: "kalamkar",
+            fullName: function () {
+                return (this.firstName + " " + this.lastName).toUpperCase();
+            }
+        }
+        // document.getElementById("hello").innerHTML = you.fullName();
+
+    </script>
+    <h1>JavaScript Display Objects</h1>
+    <script>
+        const you1={
+            firstName:"roshan",
+            lastName:"kalamkar",
+            fullName: function(){
+                return this.firstName+" "+this.lastName
+            }
+        }
+        // document.getElementByI-d("hello").innerHTML=you1
+
+    </script>
+    <h2>Displaying the Object in a Loop</h2>
+    <script>
+  const you3={
+    firstName:'Roshan',
+    lastName:"Kalamkar"
+  };
+
+  let person="";
+  for(let x in you3){
+    person+= you3[x]+" "
+  }
+//   document.getElementById("hello").innerHTML=person
+    </script>
+    <h2>Display properties in JSON format:</h2>
+    <script>
+        const person1={
+            firstNmae:"roshan",
+            lastName:'Kalamkar'
+        };
+        document.getElementById("hello").innerHTML=JSON.stringify(person1);
+    </script>
+</body>
+
+</html>

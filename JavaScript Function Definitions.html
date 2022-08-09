@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Definitions</title>
+</head>
+
+<body>
+    <p id="jj"></p>
+    <script>
+        const x = myfunction(4, 5)
+        // document.getElementById("jj").innerHTML = x
+        function myfunction(a, b) {
+            return a * b;
+        }
+    </script>
+    <script>
+        const myfunction = new Function("a", "b", "return a*b");
+        document.getElementById("jj").innerHTML=myfunction(4,5)
+    </script>
+    <h2>Default parameters</h2>
+    <script>
+  function myfunction(x,y){
+    if(y===undefined){
+        y=3;
+    }
+    return x*y
+  }
+//   document.getElementById("jj").innerHTML=myfunction(6)
+    </script>
+    <script>
+       function myfunction(x,y=2){
+        return x*y;
+       }
+    //    document.getElementById("jj").innerHTML=myfunction(5);
+    </script>
+    <script>
+   function findMax(){
+    let max=-Infinity;
+    for(let i=0; i<arguments.length; i++){
+        if(arguments[i]>max)
+        max=arguments[i];
+    }
+    return max;
+   }
+//    document.getElementById("jj").innerHTML=findMax(1,2,3,4,5,6,7,8,10,11,34);
+    </script>
+</body>
+
+</html>
